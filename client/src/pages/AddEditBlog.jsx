@@ -51,6 +51,14 @@ useEffect(()=>{
 if (id) {
   const singleBlog = userBlogs.find((blog)=> blog._id === id)
 
+  
+  
+setTitle(singleBlog.title)
+setDescription(singleBlog.description)
+  
+  
+//   also tried not working
+//   setBlogData({...singleBlog})
 
 
 console.log(singleBlog);
